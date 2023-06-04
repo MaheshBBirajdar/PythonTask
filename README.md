@@ -17,7 +17,6 @@
       
 # API Endpoints :- 
 
-{
     path('user/list', UserListView.as_view(), name='userlist' ),
     path('user/create/', UserCreateView.as_view(),name='usercreate' ),
     path('user/<int:pk>/', UserRetrieveView.as_view(),name='userR' ),
@@ -36,4 +35,4 @@
     path('like/update/<int:pk>/', LikeUpdateView.as_view(),name='LikeU' ),
     path('like/delete/<int:pk>/', LikeDestroyView.as_view(),name='LikeD' ),
     
-   }
+  
